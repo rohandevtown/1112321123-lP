@@ -49,12 +49,14 @@ const HomePage = () => {
             isDark={true}
           />
 
+    <div className="container mx-auto px-4 md:px-12 my-8 flex flex-col gap-3">
           <PosterSlider
             title="Online Streaming Events "
             subtitle="Online Streaming Events"
             posters={onlineStreamEvents}
             isDark={false}
           />
+          </div>
         </div>
       </div>
     </>
@@ -62,3 +64,4 @@ const HomePage = () => {
 };
 
 export default DefaultLayoutHoc(HomePage);
+
